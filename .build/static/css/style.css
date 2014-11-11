@@ -53,12 +53,12 @@ a#documentation {
 
 #wrapper {
 	padding:100px 40px 100px 40px;
-	max-width: 880px;
+	max-width: 1240px;
 	margin:0 auto;
 }
 
 #wrapper.post {
-	max-width:880px;
+	max-width:1240px;
 }
 
 #header {
@@ -76,7 +76,7 @@ img {
 }
 
 #thumbnails a {
-	width:49%;
+	width:18%;
 	float:left;
 	position:relative;
 }
@@ -87,11 +87,11 @@ img {
 }
 
 #thumbnails a:nth-child(1), #thumbnails a:nth-child(2) {
-		margin-top: 0;
+		margin-top: 2%;
 }
 
 #thumbnails a:nth-child(2n) {
-	margin-right: 0;
+	margin-right: 2%;
 }
 
 #thumbnails a,#thumbnails a span {

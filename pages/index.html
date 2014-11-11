@@ -2,12 +2,11 @@
 {% block content %}
 <section id="wrapper">
   <header id="header">
-    <h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
+    <h1 class="page_header">{% block title %}{{ block.super }}{% endblock title %}</h1><br/>
+    
   </header> <!--header-->
 
-  <a id="documentation" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
-
-  <section id="thumbnails" class="group">
+  <section id="thumbnails" class="group">					
     {% for post in posts %}
     <a href='/{{ post.path }}'><img class="2x" width="300" height="300" src="{{ post.thumbnail }}"/>
     <span>{{ post.title }}</span>
@@ -19,6 +18,8 @@
   <footer id="footer">
     <p class="small">A short description.</p>
   </footer>
+  <br/>
+  <img class="logo_centered 2x" width="250" height="135" src="{% static '/images/super-soaker.jpg' %}"/>
   {% endblock footer %}
 </section> <!--wrapper-->
 

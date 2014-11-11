@@ -1,0 +1,43 @@
+// Main Sass Stylesheet
+
+$fontPrenton: "prenton";
+
+// Colors
+$black: #000;
+
+
+.page_header {
+	font-size: 2.4rem;
+	font-family: $fontPrenton;
+}
+
+.tags_span {
+	font-size: 1.2rem;
+	font-family: $fontPrenton;
+}
+
+.project_desc_title {
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-right: 5px;
+	color: $black;
+	display: inline-block;
+}
+
+.project_url {
+	font-size: 1.2rem;
+}
+.project_url:hover {
+	font-weight: 800;
+	text-decoration: underline;
+	transition: font-weight .1s ease-in-out; 
+}
+
+.project_desc {
+	margin-top: 15px;
+}
+
+img.logo_centered {
+	margin-left: 245px;
+	margin-top: 25px;
+}

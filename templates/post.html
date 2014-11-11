@@ -4,7 +4,7 @@
 
 <section id="wrapper" class="post group">
   <header id="header">
-    <a href="/"><h1>Portfolio</h1></a>
+    <a href="/"><h1>&laquo; Portfolio</h1></a>
     {% block nav %}
     {{ block.super }}
     {% endblock nav %}
@@ -19,7 +19,7 @@
   </article>
   
   <footer id="post-meta" class="group">
-    <div class="date">{{ date|date:"M j" }}</div>
+    <div class="date">{{ date|date:"M Y" }}</div>
     {% if tags %}
     <div><span>Tags</span> {{ tags }} </div>
     {% endif %}
@@ -43,6 +43,11 @@
   		{% endif %}
   	</span>
   </nav>
+  <section id="footer-social">
+	  <ul class="social_links">
+		  li.social_link>a[href="#"]*4
+	  </ul>
+  </section>
   </footer>
 
 </section> <!--wrapper-->

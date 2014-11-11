@@ -7,9 +7,12 @@
 
 	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	<link rel="stylesheet" href="{% static '/style.css' %}">
+	<script src="//use.typekit.net/jwe3uns.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 
 	{% block header %}
-	<title>{% block title %}Portfolio{% endblock %}</title>
+	<title>{% block title %}Matt Urenovich's Portfolio{% endblock %}</title>
 	{% endblock header %}
   </head>
 
@@ -19,7 +22,7 @@
 	{% endblock content %}
 
 	{% block scripts %}
-	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="{% static '/js/main.js' %}"></script>
 	{% endblock scripts %}
 </body>

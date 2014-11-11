@@ -1,1 +1,6 @@
-{"port":8463}
+{
+    "aws-access-key": "AKIAJ2MWLV5J7NQ57JMQ",
+    "aws-bucket-name": "mu-portfolio",
+    "aws-bucket-website": "mu-portfolio.s3-website-us-west-2.amazonaws.com",
+    "port": 8463
+}
