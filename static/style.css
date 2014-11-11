@@ -31,4 +31,29 @@ img.logo_centered {
 .copyright {
   margin-top: 25px; }
 
+button {
+  padding: 15px;
+  background: transparent;
+  border: 3px solid #000;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.1rem;
+  box-sizing: border-box; }
+
+button:hover {
+  background: #000;
+  color: #fff;
+  border: 3px solid #fff;
+  box-sizing: border-box; }
+
+#nsr-button {
+  background: #061438;
+  color: #fff;
+  border: 3px solid #fff; }
+
+#nsr-button:hover {
+  background: transparent;
+  color: #061438;
+  border: 3px solid #061438; }
+
 /*# sourceMappingURL=style.map */

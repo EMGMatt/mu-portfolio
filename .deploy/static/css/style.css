@@ -21,7 +21,7 @@ General Spacing
 .post img {
 	margin:40px auto;
 	position:relative;
-	max-width:800px;
+	max-width:1000px;
 	width:100%;
 }
 .post img+img {
