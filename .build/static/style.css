@@ -25,7 +25,10 @@
   margin-top: 15px; }
 
 img.logo_centered {
-  margin-left: 245px;
+  margin-left: 345px;
+  margin-top: 25px; }
+
+.copyright {
   margin-top: 25px; }
 
 /*# sourceMappingURL=style.map */
