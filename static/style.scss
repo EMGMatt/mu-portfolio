@@ -43,7 +43,30 @@ img.logo_centered {
 	margin-top: 25px;
 }
 .copyright {
-	margin-top: 25px;
+	margin-top: 225px;
+}
+
+p.welcome_message {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+
+.project_tech {
+	display: block;
+	margin-bottom: 200px;
+	padding-left: 20%;
+}
+.tech_used_title {
+	font-size: 1.4rem;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#welcome-message {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
 }
 
 // Button Stylings
@@ -74,4 +97,37 @@ button:hover {
 	background: transparent;
 	color: $nsrblue;
 	border: 3px solid $nsrblue;
+}
+
+
+// List Styles
+
+.list_left {
+	float: left;
+	width: 48.5%;
+}
+
+.list_right {
+	float: right;
+	width: 48.5%;
+}
+
+.teach_used_item {
+	text-align: left;
+}
+
+// Typography
+h2.project_header {
+	font-size: 3rem;
+	margin-bottom: -15px;
+}
+
+.my_tech {
+	margin-bottom: 15px;
+	margin-right: 1%;
+	opacity: 0.5;
+}
+
+.my_tech:hover {
+	opacity: 1;
 }

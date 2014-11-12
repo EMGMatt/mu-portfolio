@@ -1,0 +1,50 @@
+title: The Next Step Realty
+thumbnail: /static/images/thumbnails/image-thumbnail_NSR.jpg
+tags: Web Design, Web Development, WordPress, UI/UX Dev
+date: 01-05-2014
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+<center><h2 class="project_header">The Next Step Realty</h2></center>
+
+<center><img class="featured 2x" src="{% static '/images/projects/nsr-1.jpg' %}"/></center>
+
+<div class="project_details">
+	<center>
+		<span class="project_url">
+			<a href="http://www.thenextsteprealty.com/" target="_blank" rel="follow" alt="The Next Step Realty" title="The Next Step Realty" class="project_url">
+				<button id="nsr-button">Visit The Next Step Realty</button>
+			</a>
+		</span>
+	</center>
+	<br/>
+	<section class="project_desc">
+		<p>The Next Step Realty is a Real Estate Brokerage Firm in New York City that works exclusively with Recent College Graduates seeking their first NYC Apartments.</p>
+		<p>The Next Step Realty was founded in 2010 and has grown year over year and now includes 3 locations in NYC. I built two separate sites the original at the end of 2012 with a launch in March of 2013 and the 2nd, most current one at the end of 2013 with a launch in May of 2014. It is a completely custom WordPress Theme based on Zurb's awesome Foundation 5 Responsive Framework with a custom social media plugin as well as a custom Sign Up/CRM plugin.</p>
+	</section>
+	<h1 class="tech_used_title">Technology Used</h1>
+	<section class="project_tech">
+		<ul class="tech_used list_left">
+			<li class="teach_used_item">WordPress CMS</li>
+			<li class="teach_used_item">HTML/HTML5</li>
+			<li class="teach_used_item">CSS/CSS3</li>
+			<li class="teach_used_item">jQuery!/JavaScript</li>
+			<li class="teach_used_item">PHP &amp; MySQL</li>
+			<li class="teach_used_item">Zurb Foundation 5 Responsive Framework</li>
+		</ul>
+		<ul class="tech_used list_right">
+			<li class="teach_used_item">Custom WordPress Theme</li>
+			<li class="teach_used_item">Custom Responsive Menu</li>
+			<li class="teach_used_item">Custom Social Media Plugin</li>
+			<li class="teach_used_item">Custom Sign UP/CRM Plugin</li>
+			<li class="teach_used_item">Responsive Design</li>
+			<li class="teach_used_item">Parallax Effects</li>
+		</ul>
+	</section>
+	
+</div>
+
+{% endfilter %}
+{% endblock body %}

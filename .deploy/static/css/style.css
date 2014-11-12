@@ -119,7 +119,7 @@ img {
 }
 
 #thumbnails a:hover {
-	opacity:.85;
+	opacity: .55;
 }
 
 #thumbnails a:hover span {

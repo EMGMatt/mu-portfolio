@@ -29,7 +29,27 @@ img.logo_centered {
   margin-top: 25px; }
 
 .copyright {
-  margin-top: 25px; }
+  margin-top: 225px; }
+
+p.welcome_message {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2rem; }
+
+.project_tech {
+  display: block;
+  margin-bottom: 200px;
+  padding-left: 20%; }
+
+.tech_used_title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+#welcome-message {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  padding-bottom: 15px; }
 
 button {
   padding: 15px;
@@ -55,5 +75,28 @@ button:hover {
   background: transparent;
   color: #061438;
   border: 3px solid #061438; }
+
+.list_left {
+  float: left;
+  width: 48.5%; }
+
+.list_right {
+  float: right;
+  width: 48.5%; }
+
+.teach_used_item {
+  text-align: left; }
+
+h2.project_header {
+  font-size: 3rem;
+  margin-bottom: -15px; }
+
+.my_tech {
+  margin-bottom: 15px;
+  margin-right: 1%;
+  opacity: 0.5; }
+
+.my_tech:hover {
+  opacity: 1; }
 
 /*# sourceMappingURL=style.map */

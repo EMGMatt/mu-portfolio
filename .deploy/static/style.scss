@@ -43,7 +43,19 @@ img.logo_centered {
 	margin-top: 25px;
 }
 .copyright {
-	margin-top: 25px;
+	margin-top: 225px;
+}
+
+p.welcome_message {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+
+.project_tech {
+	display: block;
+	margin-bottom: 200px;
+	padding-left: 20%;
 }
 
 // Button Stylings
@@ -74,4 +86,21 @@ button:hover {
 	background: transparent;
 	color: $nsrblue;
 	border: 3px solid $nsrblue;
+}
+
+
+// List Styles
+
+.list_left {
+	float: left;
+	width: 48.5%;
+}
+
+.list_right {
+	float: right;
+	width: 48.5%;
+}
+
+.teach_used_item {
+	text-align: left;
 }

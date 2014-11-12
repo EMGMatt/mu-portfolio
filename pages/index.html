@@ -14,15 +14,33 @@
     {% endfor %}
   </section> <!--thumbnails-->
   
+  <section id="welcome-message">
+	  <p class="welcome_message">Welcome to the Portfolio for Front-end Web Developer Matt Urenovich. Please click on a logo above to learn more about a specific project.</p>
+  </section>
+  
+  <section id="technologies" class="group">
+	  <h1>Technologies I Use</h1>
+	  <br/>
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/html5.jpg' %}" alt="HTML5" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/css3.jpg' %}" alt="CSS3" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/js.jpg' %}" alt="JavaScript" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/jquery.jpg' %}" alt="jQuery!" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/sass.jpg' %}" alt="Sass" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/angular.jpg' %}" alt="AngularJS" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/foundation-5.jpg' %}" alt="Zurb Foundation 5" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/bootstrap.jpg' %}" alt="Twitter Bootstrap 3" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/php.jpg' %}" alt="PHP" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/mysql.jpg' %}" alt="MySQL" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/wp.jpg' %}" alt="WordPress" />
+	  <img class="2x my_tech" width="175" src="{% static '/images/tech/emmet.jpg' %}" alt="Emmet.io" />
+  </section>
+  
   {% block footer %}
   <footer id="footer">
-    <p class="small">A short description.</p>
-  </footer>
-  <br/>
-  <img class="logo_centered 2x" width="250" height="135" src="{% static '/images/super-soaker.jpg' %}"/>
-  <div class="copyright">
+	<div class="copyright">
 	  <center>&copy; 2014 Matt Urenovich, All Rights Reserved</center>
-  </div>
+  	</div>
+  </footer>
   {% endblock footer %}
 </section> <!--wrapper-->
 {% endblock content %}
