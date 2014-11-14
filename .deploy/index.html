@@ -8,9 +8,17 @@
 	<link rel="shortcut icon" href="/static/images/favicon.ico">
 	<link rel="stylesheet" href="/static/css/style.css">
 	<link rel="stylesheet" href="/static/style.css">
+	<!-- 	<link rel="stylesheet" href="/static/css/animate.min.css"> -->
+	<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="//use.typekit.net/jwe3uns.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-
+	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.page_header').addClass('animated fadeIn');
+		});
+	</script>
 	
 	<title>Matt Urenovich's Portfolio</title>
 	
@@ -26,62 +34,110 @@
 
   <section id="thumbnails" class="group">					
     
-    <a href='/posts/mazzilli-masonry.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_mazzilli.jpg"/>
-    <span>Mazzilli Mason Contractors</span>
-    </a>
-    
-    <a href='/posts/next-step.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_NSR.jpg"/>
-    <span>The Next Step Realty</span>
-    </a>
-    
-    <a href='/posts/tailored-ave.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_T_AVE.jpg"/>
-    <span>Tailored Avenue</span>
-    </a>
-    
-    <a href='/posts/project-ten.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_prokko.jpg"/>
-    <span>Prokko</span>
-    </a>
-    
-    <a href='/posts/honeyjawn-university.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_HU.jpg"/>
-    <span>HoneyJawn University</span>
-    </a>
-    
-    <a href='/posts/edlred-tailored.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_eldred.jpg"/>
-    <span>Eldred Tailored</span>
-    </a>
-    
-    <a href='/posts/supreme-metro.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_supreme.jpg"/>
-    <span>Supreme Metro Corp</span>
-    </a>
-    
-    <a href='/posts/project-seven.html'><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_austin.jpg"/>
+    <a id="11-01-2014" href="/posts/austin-adamec.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_austin.jpg"/>
     <span>Austin Adamec</span>
     </a>
     
-    <a href='/posts/lp-brick.html'><img class="2x" width="300" height="300" src="/static/images/image-thumbnail.jpg"/>
-    <span>LP Brick Masonry &amp; Landscaping</span>
+    <a id="07-15-2014" href="/posts/mazzilli-masonry.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_mazzilli.jpg"/>
+    <span>Mazzilli Mason Contractors</span>
     </a>
     
-    <a href='/posts/varsity-beats.html'><img class="2x" width="300" height="300" src="/static/images/image-thumbnail.jpg"/>
-    <span>Varsity Beats</span>
+    <a id="05-01-2014" href="/posts/next-step.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_NSR.jpg"/>
+    <span>The Next Step Realty</span>
+    </a>
+    
+    <a id="04-13-2014" href="/posts/tailored-ave.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_T_AVE.jpg"/>
+    <span>Tailored Avenue</span>
+    </a>
+    
+    <a id="12-15-2013" href="/posts/prokko.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_prokko.jpg"/>
+    <span>Prokko</span>
+    </a>
+    
+    <a id="10-27-2013" href="/posts/honeyjawn-university.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_HU.jpg"/>
+    <span>HoneyJawn University</span>
+    </a>
+    
+    <a id="10-12-2013" href="/posts/edlred-tailored.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_eldred.jpg"/>
+    <span>Eldred Tailored</span>
+    </a>
+    
+    <a id="07-25-2013" href="/posts/empowered-media-group.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_empowered.jpg"/>
+    <span>Empowered Media Group</span>
+    </a>
+    
+    <a id="04-10-2013" href="/posts/supreme-metro.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_supreme.jpg"/>
+    <span>Supreme Metro Corp</span>
+    </a>
+    
+    <a id="02-01-2013" href="/posts/lp-brick.html"><img class="2x" width="300" height="300" src="/static/images/thumbnails/image-thumbnail_lp.jpg"/>
+    <span>LP Brick Masonry &amp; Landscaping</span>
     </a>
     
   </section> <!--thumbnails-->
   
+  <section id="welcome-message">
+	  <p class="welcome_message">Welcome to the Portfolio for Front-end Web Developer Matt Urenovich. Please click on a logo above to learn more about a specific project.</p>
+  </section>
+  
+  <section id="technologies" class="group">
+	  <h1>Technologies I Use &amp; Love</h1>
+	  <br/>
+	  <img class="2x my_tech" width="175" src="/static/images/tech/html5.jpg" alt="HTML5" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/css3.jpg" alt="CSS3" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/js.jpg" alt="JavaScript" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/jquery.jpg" alt="jQuery!" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/sass.jpg" alt="Sass" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/angular.jpg" alt="AngularJS" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/foundation-5.jpg" alt="Zurb Foundation 5" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/bootstrap.jpg" alt="Twitter Bootstrap 3" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/php.jpg" alt="PHP" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/mysql.jpg" alt="MySQL" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/wp.jpg" alt="WordPress" />
+	  <img class="2x my_tech" width="175" src="/static/images/tech/emmet.jpg" alt="Emmet.io" />
+  </section>
+  
   
   <footer id="footer">
-    <p class="welcome_message">Welcome to the Portfolio for Front-end Web Developer Matt Urenovich. Please click on a logo above to learn more about a specific project.</p>
+	<div id="social-footer">
+		<ul class="social_icons">
+			<li id="twitter-icon" class="social_icon"><a href="https://www.twitter.com/MattzThoughtz" alt="Matt Urenovich on Twitter" target="_blank" title="Matt Urenovich on Twitter"><i class="fa fa-twitter fa-4x"></i></a></li>
+			<li id="google-plus-icon" class="social_icon"><a href="https://plus.google.com/u/2/111566536692431813126/about/p/pub" alt="Matt Urenovich on Google+" target="_blank" title="Matt Urenovich on Google+"><i class="fa fa-google-plus fa-4x"></i></a></li>
+			<li id="linkedin-icon" class="social_icon"><a href="https://www.linkedin.com/pub/matt-urenovich/64/640/228" alt="Matt Urenovich on LinkedIn" target="_blank" title="Matt Urenovich on LinkedIn"><i class="fa fa-linkedin fa-4x"></i></a></li>
+			<li id="github-icon" class="social_icon"><a href="https://github.com/EMGMatt" alt="Matt Urenovich on GitHub" target="_blank" title="Matt Urenovich on GitHub"><i class="fa fa-github-alt fa-4x"></i></a></li>
+			<li id="skype-icon" class="social_icon"><a href="#social-footer"><i class="fa fa-skype fa-4x"></i></a></li>
+			<li id="bitbucket-icon" class="social_icon"><a href="https://bitbucket.org/emgmatt" alt="Matt Urenovich on BitBucket" target="_blank" title="Matt Urenovich on BitBucket"><i class="fa fa-bitbucket fa-4x"></i></a></li>
+		</ul> 
+	</div>
+	<div class="copyright">
+	  <center>&copy;  Matt Urenovich, All Rights Reserved</center>
+  	</div>
   </footer>
-  <div class="copyright">
-	  <center>&copy; 2014 Matt Urenovich, All Rights Reserved</center>
-  </div>
+  	<div id="overlay-skype">
+	  <div class="modal_window">
+		  <div class="modal_window_content">
+			  <section class="modal_content">
+			  	<a href="#" class="close">Close</a>
+			    <h1 class="overlay_title">Matt Urenovich on Skype</h1>
+			    <div id="skype-contact-info">
+				    <h4>Skype Username:</h4>
+				    <span id="skype-username">Matt.Urenovich</span>
+			    </div>
+			  </section>
+		  </div>
+	  </div>
+	</div>
   
 </section> <!--wrapper-->
+<code>
+	clicking on "#skype-icon" adds class "open" on "#overlay-skype"
+	clicking on ".close, #overlay-skype" removes class "open" on "#overlay-skype"
+</code>
 
 
 	
-	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="/static/js/main.js"></script>
+	<script src="/static/js/uilang.js"></script>
 	
 </body>
 </html>

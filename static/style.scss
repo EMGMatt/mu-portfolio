@@ -6,10 +6,50 @@ $fontPrenton: "prenton";
 $black: #000;
 $white: #fff;
 $nsrblue: rgba(6, 20, 56, 1);
+$emgred: rgba(132, 28, 7, 1);
+$skypeblue: rgba(0, 175, 240, 1);
+$twitterblue: rgba(85, 172, 238, 1);
+$googlered: rgba(221, 75, 57, 1);
+$linkedinblue: rgba(0, 116, 180, 1);
+$bitbucketblue: rgba(29, 79, 131, 1);
+
+// Mixins
+@mixin transform-scale($scale){
+	-webkit-transform: scale($scale); // Safari and Chrome
+	-moz-transform: scale($scale); // Firefox
+	-ms-transform: scale($scale); // IE 9+
+	-o-transform: scale($scale); //Opera
+	transform: scale($scale);
+}
+
+@mixin animation-duration($duration){
+	-webkit-animation-duration: $duration; // Safari and Chrome
+	-moz-animation-duration: $duration; // Firefox
+	-ms-animation-duration: $duration; // IE 9+
+	-o-animation-duration: $duration; // Opera
+	animation-duration: $duration;
+}
+
+@mixin animation-delay($delay){
+	-webkit-animation-delay: $delay; // Safari and Chrome
+	-moz-animation-delay: $delay; // Firefox
+	-ms-animation-delay: $delay; // IE 9+
+	-o-animation-delay: $delay; // Opera
+	animation-delay: $delay;
+}
+
+@mixin animation-iteration-count($count){
+	-webkit-animation-iteration-count: $count; // Safari and Chrome
+	-moz-animation-iteration-count: $count; // Firefox
+	-ms-animation-iteration-count: $count; // IE 9+
+	-o-animation-iteration-count: $count; // Opera
+	animation-iteration-count: $count;
+}
 
 .page_header {
 	font-size: 2.4rem;
 	font-family: $fontPrenton;
+	
 }
 
 .tags_span {
@@ -69,6 +109,16 @@ p.welcome_message {
 	padding-bottom: 15px;
 }
 
+#thumbnails a img {
+	@include transform-scale(1.00);
+	transition: transform 0.4s ease;
+}
+
+#thumbnails a img:hover {
+	@include transform-scale(1.5);
+    transition: transform 0.4s ease;
+}
+
 // Button Stylings
 button {
 	padding: 15px;
@@ -99,6 +149,18 @@ button:hover {
 	border: 3px solid $nsrblue;
 }
 
+#emg-button {
+	background: transparent;
+	color: $emgred;
+	border: 3px solid $emgred;
+}
+
+#emg-button:hover {
+	background: $emgred;
+	color: $white;
+	border: 3px solid $white;
+}
+
 
 // List Styles
 
@@ -126,8 +188,180 @@ h2.project_header {
 	margin-bottom: 15px;
 	margin-right: 1%;
 	opacity: 0.5;
+	@include transform-scale(0.7);
+	transition: transform 0.4s ease;
 }
 
 .my_tech:hover {
 	opacity: 1;
+	@include transform-scale(1);
+	transition: transform 0.4s ease;
 }
+
+// Social Media Stylings
+#social-footer {
+	ul.social_icons {
+		list-style-type: none;
+		li.social_icon {
+			list-style-type: none;
+			display: inline;
+			min-width: 36px;
+			min-height: 36px;
+			margin: 0 15px;
+		}
+	}
+}
+li#twitter-icon a {
+	color: $twitterblue;
+}
+li#google-plus-icon a {
+	color: $googlered;
+}
+li#linkedin-icon a {
+	color: $linkedinblue;
+}
+li#github-icon a {
+	color: $black;
+}
+li#skype-icon a {
+	color: $skypeblue;
+	cursor: hand !importantr;
+}
+li#skype-icon a:hover {
+	cursor: hand !important;
+}
+li#bitbucket-icon a {
+	color: $bitbucketblue;
+}
+li.social_icon:hover {
+	opacity: 0.65;
+}
+
+// Social Overlay Stylings
+
+:root {
+  font: 500 16px $fontPrenton;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+#overlay-skype, .modal_window {
+  opacity: 0;
+  transition: .5s;
+}
+
+#overlay-skype {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 175, 240, .45);
+  pointer-events: none;
+  z-index: 5000;
+}
+
+#overlay-skype.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal_window {
+  position: fixed;
+  width: 470px;
+  height: 400px;
+  margin: 100px auto 0px 38%;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 5px 12px rgba(15,27,39,.4);
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transform: translateY(80%) scale(.8);
+  transform: translateY(80%) scale(.8);
+  transition-timing-function: cubic-bezier(.3, 0, 0, 1.3);
+  transition-delay: .4s;
+}
+
+.open .modal_window {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.modal_window .close {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 7px;
+  top: 7px;
+  text-indent: -9000px;
+  background-image: url('../static/images/close.jpg');
+}
+
+#overlay-skype .modal_window {
+	  background: url('../static/images/skype-bg.jpg');
+	  background-size: 100% 100%;
+  }
+  
+.modal_window_content {
+	background: $white;
+	min-height: 100%;
+	min-width: 470px;
+	margin-left: -25px;
+	opacity: 0.6;
+	h1 {
+		opacity: 1;
+	}
+	h4 {
+		opacity: 1;
+	}
+}
+.modal_content {
+	background: transparent;
+	opacity: 1;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .modal_window .close {
+    background-image: url('../static/images/close@2x.jpg');
+    background-size: 100% 100%;
+  }
+  #overlay-skype .modal_window {
+	background: url('../static/images/skype-bg@2x.jpg');
+	background-size: 100% 100%;
+  }
+  .modal_window_content {
+	background: $white;
+	opacity: 0.675;
+  }
+  .modal_content {
+	background: transparent;
+	opacity: 1;
+  }
+}
+
+.modal_window h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #1A3547;
+}
+
+h1.overlay_title {
+	font-size: 2rem !important;
+	border-bottom: 2px solid $black;
+	padding-bottom: 10px;
+}
+
+#skype-contact-info h4 {
+	font-size: 1.6rem;
+	margin-top: 100px;
+	margin-bottom: 5px;
+	color: rgba(0, 0, 0, 1);
+}
+
+#skype-username {
+	font-weight: normal;
+	font-size: 1.6rem;
+	color: rgba(0, 0, 0, 1);
+}
+

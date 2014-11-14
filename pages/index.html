@@ -8,7 +8,7 @@
 
   <section id="thumbnails" class="group">					
     {% for post in posts %}
-    <a href='/{{ post.path }}'><img class="2x" width="300" height="300" src="{{ post.thumbnail }}"/>
+    <a id="{{ post.date|date:"m-d-Y" }}" href="/{{ post.path }}"><img class="2x" width="300" height="300" src="{{ post.thumbnail }}"/>
     <span>{{ post.title }}</span>
     </a>
     {% endfor %}
@@ -19,7 +19,7 @@
   </section>
   
   <section id="technologies" class="group">
-	  <h1>Technologies I Use</h1>
+	  <h1>Technologies I Use &amp; Love</h1>
 	  <br/>
 	  <img class="2x my_tech" width="175" src="{% static '/images/tech/html5.jpg' %}" alt="HTML5" />
 	  <img class="2x my_tech" width="175" src="{% static '/images/tech/css3.jpg' %}" alt="CSS3" />
@@ -37,10 +37,40 @@
   
   {% block footer %}
   <footer id="footer">
+	<div id="social-footer">
+		<ul class="social_icons">
+			<li id="twitter-icon" class="social_icon"><a href="https://www.twitter.com/MattzThoughtz" alt="Matt Urenovich on Twitter" target="_blank" title="Matt Urenovich on Twitter"><i class="fa fa-twitter fa-4x"></i></a></li>
+			<li id="google-plus-icon" class="social_icon"><a href="https://plus.google.com/u/2/111566536692431813126/about/p/pub" alt="Matt Urenovich on Google+" target="_blank" title="Matt Urenovich on Google+"><i class="fa fa-google-plus fa-4x"></i></a></li>
+			<li id="linkedin-icon" class="social_icon"><a href="https://www.linkedin.com/pub/matt-urenovich/64/640/228" alt="Matt Urenovich on LinkedIn" target="_blank" title="Matt Urenovich on LinkedIn"><i class="fa fa-linkedin fa-4x"></i></a></li>
+			<li id="github-icon" class="social_icon"><a href="https://github.com/EMGMatt" alt="Matt Urenovich on GitHub" target="_blank" title="Matt Urenovich on GitHub"><i class="fa fa-github-alt fa-4x"></i></a></li>
+			<li id="skype-icon" class="social_icon"><a href="#social-footer"><i class="fa fa-skype fa-4x"></i></a></li>
+			<li id="bitbucket-icon" class="social_icon"><a href="https://bitbucket.org/emgmatt" alt="Matt Urenovich on BitBucket" target="_blank" title="Matt Urenovich on BitBucket"><i class="fa fa-bitbucket fa-4x"></i></a></li>
+		</ul> 
+	</div>
 	<div class="copyright">
-	  <center>&copy; 2014 Matt Urenovich, All Rights Reserved</center>
+	  <center>&copy; {{ date|date:"Y" }} Matt Urenovich, All Rights Reserved</center>
   	</div>
   </footer>
+  	<div id="overlay-skype">
+	  <div class="modal_window">
+		  <div class="modal_window_content">
+			  <section class="modal_content">
+			  	<a href="#" class="close">Close</a>
+			    <h1 class="overlay_title">Matt Urenovich on Skype</h1>
+			    <div id="skype-contact-info">
+				    <h4>Skype Username:</h4>
+				    <span id="skype-username">Matt.Urenovich</span>
+			    </div>
+			  </section>
+		  </div>
+	  </div>
+	</div>
   {% endblock footer %}
 </section> <!--wrapper-->
+<code>
+	clicking on "#skype-icon" adds class "open" on "#overlay-skype"
+	clicking on ".close, #overlay-skype" removes class "open" on "#overlay-skype"
+</code>
 {% endblock content %}
+
+

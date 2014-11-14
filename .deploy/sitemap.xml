@@ -6,7 +6,17 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>/posts/austin-adamec.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>/posts/edlred-tailored.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/posts/empowered-media-group.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -31,12 +41,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/project-seven.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/posts/project-ten.html</loc>
+        <loc>/posts/prokko.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -47,11 +52,6 @@
     </url>
     <url>
         <loc>/posts/tailored-ave.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/posts/varsity-beats.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
